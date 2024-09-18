@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.AssertJUnit.assertTrue;
+import static org.testng.Assert.assertTrue;
 //import static org.testng.AssertJUnit.assertTrue;
 
 public class AuthTest {
@@ -24,7 +24,7 @@ public class AuthTest {
         WebElement registerButton = webDriver.findElement(By.cssSelector("[value=Register]"));
         boolean displayed = registerButton.isDisplayed();
 
-        assertTrue("Error", displayed);
+        assertTrue(displayed, "Error");
 
         webDriver.quit();
     }
