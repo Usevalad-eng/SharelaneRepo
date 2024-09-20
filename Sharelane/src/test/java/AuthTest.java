@@ -45,8 +45,6 @@ public class AuthTest {
         String actualErrorMessage = errorMessage.getText();
         String expectedErrorMessage = "Oops, error on page. ZIP code should have 5 digits";
 
-        //assertEquals("Error text doesn't match!", actualErrorMessage,expectedErrorMessage);
-        //assertEquals(actualErrorMessage, expectedErrorMessage, "Error text doesn't match!");
         assertEquals(actualErrorMessage, expectedErrorMessage, "Error text doesn't match!");
         webDriver.quit();
     }
@@ -65,7 +63,6 @@ public class AuthTest {
         String actualErrorMessage = errorMessage.getText();
         String expectedErrorMessage = "Oops, error on page. ZIP code should have 5 digits";
 
-        //assertEquals("Error text doesn't match!", actualErrorMessage,expectedErrorMessage);
         assertEquals(actualErrorMessage, expectedErrorMessage, "Error text doesn't match!");
         webDriver.quit();
     }
@@ -84,7 +81,6 @@ public class AuthTest {
         String actualErrorMessage = errorMessage.getText();
         String expectedErrorMessage = "Oops, error on page. ZIP code should have 5 digits";
 
-        //assertEquals("Error text doesn't match!", actualErrorMessage,expectedErrorMessage);
         assertEquals(actualErrorMessage, expectedErrorMessage, "Error text doesn't match!");
 
         webDriver.quit();
@@ -104,7 +100,6 @@ public class AuthTest {
         String actualErrorMessage = errorMessage.getText();
         String expectedErrorMessage = "Oops, error on page. ZIP code should have 5 digits";
 
-        //assertEquals("Error text doesn't match!", actualErrorMessage,expectedErrorMessage);
         assertEquals(actualErrorMessage, expectedErrorMessage, "Error text doesn't match!");
         webDriver.quit();
     }
@@ -123,7 +118,6 @@ public class AuthTest {
         String actualErrorMessage = errorMessage.getText();
         String expectedErrorMessage = "Oops, error on page. ZIP code should have 5 digits";
 
-        //assertEquals("Error text doesn't match!", actualErrorMessage,expectedErrorMessage);
         assertEquals(actualErrorMessage, expectedErrorMessage, "Oops, error on page. ZIP code should have 5 digits");
         webDriver.quit();
     }
@@ -150,11 +144,8 @@ public class AuthTest {
         WebElement registrationButton = webDriver.findElement(By.cssSelector("[value=Register]"));
         registrationButton.click();
         String actualMessage = webDriver.findElement(By.cssSelector("[class=confirmation_message]")).getText();
-        //String actualMessage =
-                //webDriver.findElement(By.xpath("/html/body/center/table/tbody/tr[4]/td/span")).getText();
         String expectedMessage = "Account is created!";
 
-        //assertEquals("Text is not equal!", actualMessage,expectedMessage);
         assertEquals(actualMessage, expectedMessage, "Text is not equal!");
         webDriver.quit();
     }
