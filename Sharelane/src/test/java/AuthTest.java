@@ -132,9 +132,9 @@ public class AuthTest {
         webDriver.get("https://www.sharelane.com/cgi-bin/register.py?page=1&zip_code=12345");
 
         WebElement firstName = webDriver.findElement(By.name("first_name"));
-        firstName.sendKeys("Ivann");
+        firstName.sendKeys("Ivan");
         WebElement lastName = webDriver.findElement(By.name("last_name"));
-        lastName.sendKeys("Ivanovv");
+        lastName.sendKeys("Ivanov");
         WebElement email = webDriver.findElement(By.name("email"));
         email.sendKeys("Ivan@mail.ru");
         WebElement pass = webDriver.findElement(By.name("password1"));
